@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+  
+.grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    'empty zBUP empty'
+    'zBLEFT iamge1 zBRIGHT'
+    'empty zBDOWN empty';
+}
+
+.empty{
+    grid-area: empty;
+    max-width: 10vw;
+    max-height: 10vh;
+
+}
+
+.image1{
+    grid-area: image1;
+    max-height: 70vh;
+    
+}
+
+.zBUP{
+    grid-area: zBUP;
+    max-width: 10vw;
+    max-height: 10vh;
+
+}
+
+.zBDOWN{
+    grid-area: zBDOWN;
+    max-width: 10vw;
+    max-height: 10vh;
+
+}
+
+.zBRIGHT{
+
+    grid-area: zBRIGHT;
+    max-width: 10vw;
+    max-height: 10vh;
+
+}
+
+.zBLEFT{
+
+    grid-area: zBLEFT;
+    max-width: 10vw;
+    max-height: 10vh;
+
+}
+
+/* img{
+    max-width: 70%;
+    height: auto;
+} */

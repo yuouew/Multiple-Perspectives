@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alphabet cube</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="grid">
+    <div>
+      <img src="zMove/zEMPTY.png" class="empty">
+    </div>
+    <div>
+      <img src="zMove/zUP.png" class="zBUP" onclick="nextPage('u')">
+    </div>
+    <div>
+      <img src="zMove/zEMPTY.png" class="empty">
+    </div>
+    <div>
+      <img src="zMove/zLEFT.png" class="zBLEFT" onclick="nextPage('l')">
+    </div>
+    <div>
+      <img src="dBlock/D1.png"class="image1">
+    </div>
+    <div>
+      <img src="zMove/zRIGHT.png" class="zBRIGHT" onclick="nextPage('r')">
+    </div>
+    <div>
+      <img src="zMove/zEMPTY.png" class="empty">
+    </div>
+    <div>
+      <img src="zMove/zDOWN.png" class="zBDOWN" onclick="nextPage('d')">
+    </div>
+    <div>
+      <img src="zMove/zEMPTY.png" class="empty">
+    </div>
+  </div>
+
+<script>
+  function nextPage(item) {
+    if (item === 'u'){
+      window.location.href="e4.html";
+    } else if (item === 'r'){
+      window.location.href="a4.html";
+    } else if (item === 'd'){
+      window.location.href="f4.html";
+    } else if (item === 'l'){
+      window.location.href="c2.html";
+    }
+  }
+</script>
+
+</body>
+</html>
